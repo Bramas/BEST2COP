@@ -10,12 +10,12 @@ PG ?=
 CC ?= gcc-10
 
 ## for clang
-LIBS := -lm -lomp # -fopenmp
-FLAGS := -Wall -Wextra -Werror -O3 -Xpreprocessor -fopenmp $(PG)
+#LIBS := -lm -lomp # -fopenmp
+#FLAGS := -Wall -Wextra -Werror -O3 -Xpreprocessor -fopenmp $(PG)
 
 ## for gcc
-#LIBS := -lm -fopenmp
-#FLAGS := -Wall -Wextra -Werror -O3 -fopenmp $(PG)
+LIBS := -lm -fopenmp
+FLAGS := -Wall -Wextra -Werror -O3 -fopenmp $(PG)
 
 
 
